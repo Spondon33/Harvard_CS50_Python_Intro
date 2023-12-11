@@ -1,4 +1,3 @@
-
 # 1 just prints a text
 print("hello, world")
 
@@ -203,3 +202,59 @@ x = float(input("What's x? "))
 y = float(input("What's y? "))
 z = x / y
 print(f"{z:.2f}")
+
+
+
+# customizable functions (def)
+
+# 1
+name = input("What's your name? ")
+# here hello() function doesnt exist. It'll show an error
+hello()
+print(name)
+
+
+# 2 'def' defines a new function
+def hello():
+    print("hello")
+
+
+name = input("What's your name? ")
+hello()
+print(name)
+
+
+# 3
+# Here we created a new argument 'to' for our hello function
+def hello(to):
+    print("hello,", to)
+
+
+name = input("What's your name? ")
+hello(name)
+
+
+# 4
+# we are assigning a default value for 'to'
+def hello(to = "world"):
+    print("hello,", to)
+
+
+hello()
+name = input("What's your name? ")
+hello(name)
+
+
+# 5
+def main():
+    name = input("What's your name? ")
+    hello(name)
+
+
+def hello(to = "world"):
+    print("hello,", to)
+
+
+main()
+
+
