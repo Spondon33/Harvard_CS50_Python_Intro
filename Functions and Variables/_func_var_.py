@@ -1,3 +1,4 @@
+
 # 1 just prints a text
 print("hello, world")
 
@@ -134,3 +135,71 @@ first, last = name.split(" ")
 
 # Say hello to user
 print(f"hello, {first}")
+
+
+
+# CALCULATIONS
+
+# #1
+x = 1
+y = 2
+z = x + y
+print(z)
+
+
+#2
+x = input("What's x? ")
+y = input("What's y? ")
+z = x + y
+print(z)
+
+
+#3 'int' defines a value as integer
+x = input("What's x? ")
+y = input("What's y? ")
+z = int(x) + int(y)
+print(z)
+
+
+#4
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+print(x + y)
+
+
+#5 compact
+print(int(input("What's x? ")) + int(input("What's y? ")))
+
+
+#6 float
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+print(x + y)
+
+
+#7 rounds up a float to the nearest integer
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+z = round(x + y)
+print(z)
+
+
+#8 formats the number by using ","
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+z = round(x + y)
+print(f"{z:,}")
+
+
+#9 rounds up a float
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+z = round(x / y, 2)
+print(z)
+
+
+#10 rounds up a float using f string
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+z = x / y
+print(f"{z:.2f}")
