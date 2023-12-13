@@ -153,8 +153,8 @@ main()
 
 
 #4 Shortest and elegant way
-# return by default contains boolean values
-# so i dont need to write True or False
+# Return by default contains boolean values
+# So I don't need to write True or False
 def main():
     x = int(input("What's x? "))
     if is_even(x):
