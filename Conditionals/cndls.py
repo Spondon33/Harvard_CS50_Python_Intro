@@ -105,3 +105,66 @@ elif score >= 60:
     print("Grade: D")
 else:
     print("Grade: F")
+
+
+# Parity
+
+#1
+x = int(input("What's x? "))
+
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+#2
+def main():
+    x = int(input("What's x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("odd")
+
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+main()
+
+
+#3 defining my function in a shorter way
+def main():
+    x = int(input("What's x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("odd")
+
+
+def is_even(n):
+    return True if n % 2 == 0 else False
+
+
+main()
+
+
+#4 Shortest and elegant way
+# return by default contains boolean values
+# so i dont need to write True or False
+def main():
+    x = int(input("What's x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("odd")
+
+
+def is_even(n):
+    return n % 2 == 0
+
+
+main()
