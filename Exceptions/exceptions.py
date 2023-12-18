@@ -146,3 +146,27 @@ def get_int():
 
 
 main()
+
+
+# pass
+
+
+# instead of saying "x is not an integer" to the user,
+# pass will just accept that there is an error
+# and it'll just rerun the loop without saying anything.
+
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            return int(input("What's x? "))
+        except ValueError:
+            pass
+
+
+main()
