@@ -170,3 +170,24 @@ def get_int():
 
 
 main()
+
+
+# Function Arguments
+# makes te code more reusable.
+# doesn't always have to be x
+
+
+def main():
+    x = get_int("What's x? ")
+    print(f"x is {x}")
+
+
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            pass
+
+
+main()
