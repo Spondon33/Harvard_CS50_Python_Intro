@@ -86,3 +86,63 @@ while True:
 print(f"x is {x}")
 
 
+# get_int
+
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x? "))
+        except ValueError:
+            print("x is not an integer")
+        else:
+            break
+    return x
+
+
+main()
+
+
+# modifying get_int
+# return does not only break the loop but also returns the value.
+# so break is not needed as return does the job.
+
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x? "))
+            return x
+        except ValueError:
+            print("x is not an integer")
+
+
+main()
+
+# we can directly return the input.
+
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            return int(input("What's x? "))
+        except ValueError:
+            print("x is not an integer")
+
+
+main()
