@@ -32,3 +32,18 @@ try:
     print(f"x is {x}")
 except ValueError:
     print("x is not an integer")
+
+
+# NameError:
+
+# the input showed an error before it could save the value in the variable x.
+
+try:
+    x = int(input("What's x? "))
+except ValueError:
+    print("x is not an integer")
+
+print(f"x is {x}")
+
+
+
