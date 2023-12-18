@@ -1,4 +1,3 @@
-
 # Syntax Error:
 
 # syntax error: problem in the written code.
@@ -20,6 +19,16 @@ print("Hello, world")
 x = int(input("What's x?"))
 print(f"x is {x}")
 
+# Correct:
 
+# try and except
 
+# try: tells the code to try and run the program.
+# except: if there are any exceptions such as value Error,
+# except will run.
 
+try:
+    x = int(input("What's x? "))
+    print(f"x is {x}")
+except ValueError:
+    print("x is not an integer")
