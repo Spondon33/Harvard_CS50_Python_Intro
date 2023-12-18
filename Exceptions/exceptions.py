@@ -57,3 +57,32 @@ else:
     print(f"x is {x}")
 
 
+# Reprompting and break
+# will loop until the user gives a valid input according to try.
+# when the input meets the requirement as int,
+# else will break the loop and print the desired output.
+while True:
+    try:
+        x = int(input("What's x? "))
+    except ValueError:
+        print("x is not an integer")
+    else:
+        break
+
+print(f"x is {x}")
+
+
+# break can also be written as follows :
+# if the input meets the requirement as int,
+# we will break out of the loop and print the output.
+
+while True:
+    try:
+        x = int(input("What's x? "))
+        break
+    except ValueError:
+        print("x is not an integer")
+
+print(f"x is {x}")
+
+
