@@ -30,3 +30,10 @@ cards = ["Jack", "Queen", "King"]
 random.shuffle(cards)
 for card in cards:
     print(card)
+
+
+# statistics library:
+# mean function
+import statistics
+
+print(statistics.mean([100, 90]))
