@@ -14,3 +14,10 @@ from random import choice
 
 coin = choice(["heads", "tails"])
 print(coin)
+
+
+# randint
+import random
+
+number = random.randint(1, 10)
+print(number)
