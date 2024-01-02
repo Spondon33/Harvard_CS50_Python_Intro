@@ -1,3 +1,4 @@
+
 # import:
 
 # importing libraries
@@ -37,3 +38,12 @@ for card in cards:
 import statistics
 
 print(statistics.mean([100, 90]))
+
+
+# sys: this module gives access to
+# the values typed in the command line
+# argv aka Argument Vector: this is function of the sys module
+# argv is a list of all of the word typed by the user in prompt.
+import sys
+
+print("hello, my name is", sys.argv[1])
