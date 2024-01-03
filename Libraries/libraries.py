@@ -77,3 +77,15 @@ elif len(sys.argv) > 2:
     sys.exit("Too many arguments")
 
 print("hello, my name is", sys.argv[1])
+
+
+# Slices: in sys.argv[1:], [1:] will slice the first element
+# of the list and start from the second element to the end
+import sys
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+
+# [1:] will start from the second element to the end
+for arg in sys.argv[1:]:
+    print("hello, my name is", arg)
