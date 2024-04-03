@@ -98,7 +98,7 @@ if len(sys.argv) < 2:
     sys.exit("Too few arguments")
 
 # [1:] will start from the second element to the end
-# -1 will avoid the last element
+# -1 avoids the last element
 for arg in sys.argv[1:-1]:
     print("hello, my name is", arg)
 
