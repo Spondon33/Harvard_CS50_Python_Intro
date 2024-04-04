@@ -11,4 +11,5 @@ def goodbye(name):
     print(f"Good bye, {name}")
 
 
-main()
+if __name__ == "__main__":
+    main()
