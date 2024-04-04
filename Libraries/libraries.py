@@ -112,8 +112,8 @@ if len(sys.argv) == 2:
     cowsay.cow("hello, " + sys.argv[1])
 
 
-# APIs
-# requests
+# APIs helps to get specific datas from any servers
+# requests : requests to get specific datas from any servers
 import requests
 import sys
 
@@ -122,4 +122,15 @@ if len(sys.argv) != 2:
 
 response = requests.get("https://itunes.apple.com/%20search?entity=song&limit=1&term=" + sys.argv[1])
 print(response.json())
+
+# json.dumps organizes those datas and make them more readable
+import json
+import requests
+import sys
+
+if len(sys.argv) != 2:
+    sys.exit()
+
+response = requests.get("https://itunes.apple.com/%20search?entity=song&limit=1&term=" + sys.argv[1])
+print(json.dumps(response.json(), indent=2))
 
