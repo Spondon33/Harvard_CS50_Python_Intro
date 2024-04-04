@@ -111,3 +111,15 @@ import sys
 if len(sys.argv) == 2:
     cowsay.cow("hello, " + sys.argv[1])
 
+
+# APIs
+# requests
+import requests
+import sys
+
+if len(sys.argv) != 2:
+    sys.exit()
+
+response = requests.get("https://itunes.apple.com/%20search?entity=song&limit=1&term=" + sys.argv[1])
+print(response.json())
+
