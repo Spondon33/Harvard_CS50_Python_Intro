@@ -98,8 +98,16 @@ if len(sys.argv) < 2:
     sys.exit("Too few arguments")
 
 # [1:] will start from the second element to the end
-# -1 avoids the last element
+# -1 will start from last and omit the last element
 for arg in sys.argv[1:-1]:
     print("hello, my name is", arg)
 
+
+# packages
+# cowsay :
+import cowsay
+import sys
+
+if len(sys.argv) == 2:
+    cowsay.cow("hello, " + sys.argv[1])
 
