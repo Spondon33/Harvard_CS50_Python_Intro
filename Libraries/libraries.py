@@ -113,7 +113,7 @@ if len(sys.argv) == 2:
 
 
 # APIs helps to get specific datas from any servers
-# requests : requests to get specific datas from any servers
+# requests : requests to get specific datas from any server
 import requests
 import sys
 
