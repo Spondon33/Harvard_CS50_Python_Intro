@@ -1,3 +1,4 @@
+
 def main():
     fraction = input("Fraction: ")
     fraction_converted = convert(fraction)
@@ -8,11 +9,11 @@ def main():
 def convert(fraction):
     while True:
         try:
-            x , y = fraction.split("/")
+            x, y = fraction.split("/")
             new_x = int(x)
             new_y = int(y)
             f = new_x / new_y
-            if f<= 1:
+            if f <= 1:
                 p = int(f * 100)
                 return p
             else:
