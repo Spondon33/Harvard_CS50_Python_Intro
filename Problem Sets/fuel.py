@@ -1,28 +1,34 @@
 def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
+    fraction = input("Fraction: ")
+    fraction_converted = convert(fraction)
+    output = gauge(fraction_converted)
+    print(output)
+
+
+def convert(fraction):
+    while True:
+        try:
+            x , y = fraction.split("/")
+            new_x = int(x)
+            new_y = int(y)
+            f = new_x / new_y
+            if f<= 1:
+                p = int(f * 100)
+                return p
+            else:
+                fraction = input("Fraction: ")
+                pass
+        except(ValueError, ZeroDivisionError):
+            raise
+
+
+def gauge(percentage):
+    if percentage <= 1:
+        return "E"
+    elif percentage >= 99:
+        return "F"
     else:
-        print("Invalid")
-
-
-def is_valid(s):
-    for char in s:
-        if (
-                char.isupper()
-                and 2 <= len(s) <= 6
-                and s[:2].isalpha()
-                and not s[:2].isdigit()
-                and s.isalpha() or s.isalnum()
-                and all(char.isalpha() for char in s[2:-2])
-                and not s.isdigit()
-                and s[-1].isdigit()
-                and s[-2] != "0"
-                and char not in ['.', ',', ' ', '?', '!']
-        ):
-            return True
-        else:
-            return False
+        return str(percentage) + "%"
 
 
 if __name__ == "__main__":
