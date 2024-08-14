@@ -1,6 +1,6 @@
 # conditionals
 
-#1 if
+# 1 if
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
@@ -12,7 +12,7 @@ if x == y:
     print("x is equal to y")
 
 
-#2 elif faster than using multiple ifs
+# 2 elif is faster than using multiple ifs
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
@@ -24,7 +24,7 @@ elif x == y:
     print("x is equal to y")
 
 
-#3 else
+# 3 else
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
@@ -36,7 +36,7 @@ else:
     print("x is equal to y")
 
 
-#4 or
+# 4 or
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
@@ -46,7 +46,7 @@ else:
     print("x is equal to y")
 
 
-#5
+# 5
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
@@ -62,7 +62,7 @@ else:
     print("x is not equal to y")
 
 
-#6 and
+# 6 and
 score = int(input("Score: "))
 
 if score >= 90 and score <= 100:
@@ -77,7 +77,7 @@ else:
     print("Grade: F")
 
 
-#7 shortened and fast
+# 7 shortened and fast
 score = int(input("Score: "))
 
 if 90 <= score <= 100:
@@ -92,7 +92,7 @@ else:
     print("Grade: F")
 
 
-#8 more shortened and readable and fast
+# 8 more shortened and readable and fast
 score = int(input("Score: "))
 
 if score >= 90:
@@ -109,7 +109,7 @@ else:
 
 # Parity
 
-#1
+# 1
 x = int(input("What's x? "))
 
 if x % 2 == 0:
@@ -118,7 +118,7 @@ else:
     print("Odd")
 
 
-#2
+# 2
 def main():
     x = int(input("What's x? "))
     if is_even(x):
@@ -136,7 +136,7 @@ def is_even(n):
 main()
 
 
-#3 defining my function in a shorter way
+# 3 defining my function in a shorter way
 def main():
     x = int(input("What's x? "))
     if is_even(x):
@@ -152,7 +152,7 @@ def is_even(n):
 main()
 
 
-#4 Shortest and elegant way
+# 4 Shortest and elegant way
 # Return by default contains boolean values
 # So I don't need to write True or False
 def main():
@@ -172,7 +172,7 @@ main()
 
 # Houses of Hogwarts
 
-#1
+# 1
 name = input("What's your name? ")
 
 if name == "Harry":
@@ -187,7 +187,7 @@ else:
     print("Who?")
 
 
-#2
+# 2
 name = input("What's your name? ")
 
 if name == "Harry" or name == "Hermione" or name == "Ron":
@@ -198,7 +198,7 @@ else:
     print("Who?")
 
 
-#3 'match' statement
+# 3 'match' statement
 name = input("What's your name? ")
 
 match name:
@@ -214,7 +214,7 @@ match name:
         print("Who?")
 
 
-#4
+# 4
 name = input("What's your name? ")
 
 match name:
