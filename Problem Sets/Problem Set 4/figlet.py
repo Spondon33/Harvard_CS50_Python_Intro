@@ -13,9 +13,9 @@ else:
 
 figlet.getFonts()
 
-if isRandomFont == False:
+if not isRandomFont:
     try:
-        figlet.setFont(font = sys.argv[2])
+        figlet.setFont(font=sys.argv[2])
     except:
         print("Invalid Font")
         sys.exit(1)
