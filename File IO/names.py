@@ -21,3 +21,14 @@ for _ in range(3):
 
 for name in sorted(names):
     print(f'Hello, {name}')
+
+
+# storing Information
+
+# open : opens a file in order to read or write
+# 4
+name = input("Whats your name? ")
+
+file = open("names.txt", 'w')
+file.write(name)
+file.close()
