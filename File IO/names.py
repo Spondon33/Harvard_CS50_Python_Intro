@@ -58,3 +58,43 @@ name = input("What's your name? ")
 
 with open("names.txt", "a") as file :
     file.write(f"{name}\n")
+
+
+# 8
+r = read. Reads a file.
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print("Hello", line)
+
+
+# 9
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print("Hello", line.strip())
+
+
+# 10
+with open("names.txt", "r") as file:
+    for line in file:
+        print("Hello", line.rstrip())
+
+
+# 11
+names = []
+# opens the file, reads all the datas and sort them.
+with open("names.txt") as file:
+    for line in file:
+        names. append(line.rstrip())
+# print the sorted datas
+for name in sorted(names):
+    print(f"Hello {name}")
+
+
+# 12
+with open("names.txt") as file:
+    for line in sorted(file):
+        print("Hello", line.rstrip())
