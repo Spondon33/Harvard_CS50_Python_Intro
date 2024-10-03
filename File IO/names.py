@@ -56,12 +56,12 @@ file.close()
 # with
 name = input("What's your name? ")
 
-with open("names.txt", "a") as file :
+with open("names.txt", "a") as file:
     file.write(f"{name}\n")
 
 
 # 8
-r = read. Reads a file.
+# r = read. Reads a file.
 with open("names.txt", "r") as file:
     lines = file.readlines()
 
