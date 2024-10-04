@@ -138,12 +138,19 @@ for student in sorted(students, key=lambda student: student["name"]):
 # 12
 import csv
 
-students = []
+name = input("What's your name? ")
+home = input("Where is your home? ")
 
-with open("students.csv") as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-        students.append({"name": row["name"], "home": row["home"]})
+with open("students.csv", "a") as file:
+    writer = csv.writer(file)
+    writer.writerow([name, home])
 
-for student in sorted(students, key=lambda student: student["name"]):
-    print(f"{student['name']} is from {student['home']}")
+# 13
+import csv
+
+name = input("What's your name? ")
+home = input("Where is your home? ")
+
+with open("students.csv", "a") as file:
+    writer = csv.DictWriter(file, fieldnames=["name", "home"])
+    writer.writerow({"name": name, "home": home})
